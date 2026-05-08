@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Landwise Solutions to inquire about your dream property">
+    <meta name="keywords" content="contact, real estate, property, plots, land, investment, premium properties">
+    <title>Contact Landwise Solutions | Premium Real Estate</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Landwise Logo_Website.png" alt="Landwise Solutions Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#locations">Location</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Get in Touch with Us</h1>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="card-header">
+                        <h3>Site Address</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Landwise Hills,<br>
+                        Village Road,<br>
+                        Near Landmark,<br>
+                        City, State.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="card-header">
+                        <h3>Corporate Address</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Landwise Solutions,<br>
+                        Main Street,<br>
+                        Business District,<br>
+                        City - 123456</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <a href="tel:+911234567890" class="contact-link">
+                        <div class="card-header">
+                            <h3>Call Us</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <p>+91 123 456 7890</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contact-info-card">
+                    <a href="mailto:info@landwisesolutions.com" class="contact-link">
+                        <div class="card-header">
+                            <h3>Mail Us</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p>info@landwisesolutions.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h2>Enquire <em>Now!</em></h2>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                            <div class="error-message" id="phone-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <select id="plot_size" name="plot_size" required>
+                                <option value="" disabled selected>Plot size you are looking for</option>
+                                <option value="11000">11,000 sq.ft</option>
+                                <option value="22000">22,000 sq.ft</option>
+                                <option value="1acre">1 Acre</option>
+                                <option value="2acres">2 Acres</option>
+                            </select>
+                            <div class="error-message" id="plot-error"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <select id="purpose" name="purpose" required>
+                                <option value="" disabled selected>Purpose of Buying</option>
+                                <option value="1st Home">1st Home</option>
+                                <option value="2nd Home">2nd Home</option>
+                                <option value="Vacation Home">Vacation Home</option>
+                                <option value="Rental Income">Rental Income</option>
+                                <option value="Investment">Investment</option>
+                            </select>
+                            <div class="error-message" id="purpose-error"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <textarea id="message" name="message" placeholder="Your Message (Optional)" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn-submit">Submit Enquiry</button>
+                        </div>
+                    </div>
+                    <div id="form-success" class="success-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);"></section>"
+        <div class="container">
+            <h2 class="section-title">Location Map</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5831050224426!2d77.59792991482186!3d12.936487919118306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15b57c0b7c77%3A0x5c2b2b7f44444abb!2sLandwise%20Solutions!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                });
+            }
+
+            // Form validation
+            const contactForm = document.getElementById('contact-form');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const phoneInput = document.getElementById('phone');
+            const plotSizeInput = document.getElementById('plot_size');
+            const purposeInput = document.getElementById('purpose');
+            const formSuccess = document.getElementById('form-success');
+
+            // Error message elements
+            const nameError = document.getElementById('name-error');
+            const emailError = document.getElementById('email-error');
+            const phoneError = document.getElementById('phone-error');
+            const plotError = document.getElementById('plot-error');
+            const purposeError = document.getElementById('purpose-error');
+
+            // Validation functions
+            function validateName() {
+                if (nameInput.value.trim() === '') {
+                    nameError.textContent = 'Name is required';
+                    return false;
+                } else if (nameInput.value.trim().length < 2) {
+                    nameError.textContent = 'Name must be at least 2 characters';
+                    return false;
+                } else {
+                    nameError.textContent = '';
+                    return true;
+                }
+            }
+
+            function validateEmail() {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (emailInput.value.trim() === '') {
+                    emailError.textContent = 'Email is required';
+                    return false;
+                } else if (!emailRegex.test(emailInput.value.trim())) {
+                    emailError.textContent = 'Please enter a valid email address';
+                    return false;
+                } else {
+                    emailError.textContent = '';
+                    return true;
+                }
+            }
+
+            function validatePhone() {
+                const phoneRegex = /^[0-9]{10,15}$/;
+                if (phoneInput.value.trim() === '') {
+                    phoneError.textContent = 'Phone number is required';
+                    return false;
+                } else if (!phoneRegex.test(phoneInput.value.replace(/[^0-9]/g, ''))) {
+                    phoneError.textContent = 'Please enter a valid phone number';
+                    return false;
+                } else {
+                    phoneError.textContent = '';
+                    return true;
+                }
+            }
+
+            function validatePlotSize() {
+                if (plotSizeInput.value === '') {
+                    plotError.textContent = 'Please select a plot size';
+                    return false;
+                } else {
+                    plotError.textContent = '';
+                    return true;
+                }
+            }
+
+            function validatePurpose() {
+                if (purposeInput.value === '') {
+                    purposeError.textContent = 'Please select a purpose';
+                    return false;
+                } else {
+                    purposeError.textContent = '';
+                    return true;
+                }
+            }
+
+            // Add event listeners for real-time validation
+            nameInput.addEventListener('blur', validateName);
+            emailInput.addEventListener('blur', validateEmail);
+            phoneInput.addEventListener('blur', validatePhone);
+            plotSizeInput.addEventListener('change', validatePlotSize);
+            purposeInput.addEventListener('change', validatePurpose);
+
+            // Form submission
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Validate all fields
+                const isNameValid = validateName();
+                const isEmailValid = validateEmail();
+                const isPhoneValid = validatePhone();
+                const isPlotSizeValid = validatePlotSize();
+                const isPurposeValid = validatePurpose();
+
+                // If all validations pass
+                if (isNameValid && isEmailValid && isPhoneValid && isPlotSizeValid && isPurposeValid) {
+                    // Prepare form data for sending
+                    const formData = new FormData(contactForm);
+
+                    // Show loading state
+                    const submitBtn = contactForm.querySelector('.btn-submit');
+                    const originalBtnText = submitBtn.textContent;
+                    submitBtn.textContent = 'Sending...';
+                    submitBtn.disabled = true;
+
+                    // Simulate form submission (in a real scenario, you would use fetch or XMLHttpRequest)
+                    setTimeout(function() {
+                        // Reset form
+                        contactForm.reset();
+
+                        // Show success message
+                        formSuccess.textContent = 'Thank you for your enquiry! We will contact you soon.';
+                        formSuccess.style.display = 'block';
+
+                        // Reset button
+                        submitBtn.textContent = originalBtnText;
+                        submitBtn.disabled = false;
+
+                        // Hide success message after 5 seconds
+                        setTimeout(function() {
+                            formSuccess.style.display = 'none';
+                        }, 5000);
+                    }, 1500);
+
+                    // In a real scenario, you would use code like this:
+                    /*
+                    fetch('send-email.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            contactForm.reset();
+                            formSuccess.textContent = 'Thank you for your enquiry! We will contact you soon.';
+                            formSuccess.style.display = 'block';
+                        } else {
+                            formSuccess.textContent = 'There was an error sending your message. Please try again.';
+                            formSuccess.style.display = 'block';
+                        }
+                        submitBtn.textContent = originalBtnText;
+                        submitBtn.disabled = false;
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        formSuccess.textContent = 'There was an error sending your message. Please try again.';
+                        formSuccess.style.display = 'block';
+                        submitBtn.textContent = originalBtnText;
+                        submitBtn.disabled = false;
+                    });
+                    */
+                }
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Landwise Logo_Website.png" alt="Landwise Solutions Logo">
+                </div>
+
+                <div class="footer-info">
+                    <div class="footer-address">
+                        <div class="address-column">
+                            <h4>Office Address</h4>
+                            <p>Office No 402, Sairaj Apartment,<br>Opposite HDFC Bank, S B Patil Public School Road,<br>Ravet Pune - 412101</p>
+                            <p class="contact-label">Contact No.</p>
+                            <p><a href="tel:+911234567890">+91 123 456 7890</a></p>
+                        </div>
+
+                        <div class="address-column">
+                            <h4>Site Address</h4>
+                            <p>Landwise Hills, Mulshi Region,<br>near Pawna,<br>Mulshi, Pune</p>
+                            <p class="contact-label">Contact No.</p>
+                            <p><a href="tel:+919876543210">+91 987 654 3210</a></p>
+                            <p class="email-label">Email</p>
+                            <p><a href="mailto:info@landwisesolutions.com">info@landwisesolutions.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Landwise Hills. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <p>Disclaimer | <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

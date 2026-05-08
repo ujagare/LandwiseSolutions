@@ -1,0 +1,115 @@
+/* Fix for mobile menu issues */
+.mobile-menu-overlay .logo,
+.mobile-menu-overlay .section-subtitle,
+.mobile-menu-overlay .section-title,
+.mobile-menu-overlay .intro-section,
+.mobile-menu-overlay .welcome-text {
+    display: none !important;
+}
+
+/* Ensure proper spacing and full height of mobile menu */
+.mobile-menu-content {
+    padding-top: 100px !important;
+    padding-bottom: 40px !important;
+    min-height: 100vh !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+/* Ensure the mobile menu overlay takes full height */
+.mobile-menu-overlay {
+    height: 100vh !important;
+    min-height: 100% !important;
+}
+
+/* Make contact section always visible */
+.mobile-menu-contact {
+    margin-top: auto !important;
+    flex-shrink: 0 !important;
+}
+
+/* Adjust font sizes for better fit */
+.mobile-nav-links a {
+    font-size: 1.3rem !important;
+    padding: 8px 0 !important;
+}
+
+.mobile-contact-item p,
+.mobile-contact-item a {
+    font-size: 0.9rem !important;
+}
+
+/* Fix for different device heights */
+@media screen and (min-height: 800px) {
+    /* For taller screens, add more spacing */
+    .mobile-menu-content {
+        padding-top: 120px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .mobile-menu-contact {
+        margin-top: 40px !important;
+        padding-top: 25px !important;
+    }
+
+    .mobile-nav-links {
+        gap: 15px !important;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .mobile-menu-content {
+        padding-top: 100px !important;
+    }
+
+    .mobile-nav-links {
+        gap: 10px !important;
+    }
+
+    .mobile-contact-items {
+        gap: 8px !important;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .mobile-menu-content {
+        padding-top: 90px !important;
+    }
+
+    .mobile-nav-links a {
+        font-size: 1.2rem !important;
+        padding: 8px 0 !important;
+    }
+
+    .mobile-contact-item {
+        padding: 6px 10px !important;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .mobile-menu-content {
+        padding-top: 80px !important;
+    }
+
+    .mobile-nav-links a {
+        font-size: 1.1rem !important;
+        padding: 6px 0 !important;
+    }
+
+    .mobile-menu-contact h3 {
+        font-size: 0.9rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    .mobile-social-links .social-icon {
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
+
+/* Hide any unwanted elements that might be appearing */
+.mobile-menu-overlay *:not(.mobile-menu-content):not(.mobile-menu-close):not(.mobile-nav-links):not(.mobile-menu-contact):not(.mobile-contact-items):not(.mobile-contact-item):not(.mobile-social-links):not(.social-icon):not(i):not(h3):not(p):not(a):not(span):not(ul):not(li) {
+    display: none !important;
+}

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Landwise Solutions - Premium Real Estate Developer with a legacy of excellence">
+    <meta name="keywords" content="about us, real estate, property, plots, land, investment, premium properties, company history">
+    <link rel="canonical" href="https://landwisesolutions.com/about.html" />
+    <title>About Landwise Solutions | Premium Real Estate</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Locomotive Scroll CSS temporarily disabled -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fix-mobile-menu.css">
+
+    <!-- Barba.js and GSAP for page transitions -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- Only remove transition overlays, keep CTA overlay -->
+    <script>
+        // Only remove transition overlays, keep CTA overlay
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create a style element
+            var style = document.createElement('style');
+            style.innerHTML = `
+                .transition-overlay,
+                .nature-elements,
+                .nature-element,
+                [class*="overlay"]:not(.mobile-menu-overlay.active):not(.cta-overlay) {
+                    display: none !important;
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    pointer-events: none !important;
+                    z-index: -9999 !important;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</head>
+<body class="about-page" data-barba="wrapper">
+    <!-- Page Transition Overlay - Removed -->
+
+    <!-- Main Content Container -->
+    <main data-barba="container" data-barba-namespace="about" class="transition-fade">
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Landwise Logo_Website.png" alt="Landwise Solutions Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="index.html#locations">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-close">
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="mobile-nav-links">
+                <li style="--i:1"><a href="index.html">Home</a></li>
+                <li style="--i:2"><a href="about.html" class="active">About Us</a></li>
+                <li style="--i:3"><a href="index.html#locations">Location</a></li>
+                <li style="--i:4"><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mobile-menu-contact">
+                <h3>Contact Information</h3>
+                <div class="mobile-contact-items">
+                    <div class="mobile-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+918421373649">+91 84213 73649</a>
+                    </div>
+                    <div class="mobile-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:landwise24@landwisesolutions.in">landwise24@landwisesolutions.in</a>
+                    </div>
+                    <div class="mobile-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Office No 402, Sairaj Apartment, Opposite HDFC Bank, S B Patil Public School Road, Ravet Pune - 412101</p>
+                    </div>
+                </div>
+
+                <div class="mobile-social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/918421373649" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section class="about-hero-section">
+        <div class="about-hero-content">
+            <h1 class="about-hero-title">Nurturing Values for 14+ Years</h1>
+        </div>
+    </section>
+
+    <!-- About Company Section -->
+    <section class="about-company-section">
+        <div class="container">
+            <div class="about-company-content">
+                <div class="about-company-image" data-aos="fade-right">
+                    <div class="profile-image-container">
+                        <img src="images/profile/profile.jpeg" alt="Company Founder" class="profile-image">
+                        <div class="profile-info">
+                            <h3>Shivkailash Panchal</h3>
+                            <p>Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-company-text" data-aos="fade-left">
+                    <h2 class="section-title" style="position: relative; z-index: 2;">About <em>the Company</em></h2>
+                    <h3 class="founder-title">Meet Shivkailash Panchal: Guiding Your Land Solutions with Expertise and Vision</h3>
+                    <p class="section-description">Leading Landwise Solutions Pune is Shivkailash Panchal, a seasoned professional with over 14 years of deep-rooted experience in the land sector. Shivkailash brings a wealth of knowledge and a practical understanding of the intricacies involved in land acquisition, development, and management.</p>
+                    <p class="section-description">Driven by a passion for creating effective and sustainable land solutions, Shivkailash embarked on his entrepreneurial journey in 2020, establishing Landwise Solutions Pune. His vision was to build a client-centric firm that prioritizes clarity, integrity, and results in every project undertaken.</p>
+                    <p class="section-description">Shivkailash's strong academic foundation, including an MBA in Marketing and a Post Graduate Diploma in Business Management (PGDBM), complements his extensive field experience. This unique blend of business acumen and on-the-ground expertise allows him to approach land-related challenges with strategic insight and innovative solutions.</p>
+                    <p class="section-description">Clients appreciate Shivkailash's hands-on approach, his commitment to understanding their specific needs, and his ability to navigate complex land matters with ease. He fosters a collaborative environment, ensuring that clients are well-informed and confident throughout the entire process.</p>
+                    <p class="section-description">Under Shivkailash's leadership, Landwise Solutions Pune is more than just a consultancy; it's a trusted partner dedicated to helping individuals and organizations achieve their land-related goals. His unwavering dedication to excellence and his profound understanding of the local land landscape make him an invaluable asset to anyone seeking reliable and effective land solutions in Pune and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission-section">
+        <div class="container">
+            <div class="vision-mission-container">
+                <div class="vision-card" data-aos="fade-right">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2>Our Vision</h2>
+                    <div class="card-separator"></div>
+                    <p>To make our client's land dreams a reality.</p>
+                </div>
+                <div class="mission-card" data-aos="fade-left">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h2>Our Mission</h2>
+                    <div class="card-separator"></div>
+                    <p>To provide the expertise and support to achieve your property aspirations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy Counter Section -->
+    <section class="legacy-counter-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Legacy Speaks for Us</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100" style="color: #fff; max-width: 800px; margin: 0 auto 40px; position: relative; z-index: 2;">Discover our journey of excellence and commitment to quality over the years</p>
+            <div class="counter-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="counter-item">
+                    <div class="counter-number" data-count="14">0</div>
+                    <span class="counter-plus">+</span>
+                    <p class="counter-text">Years of Extensive<br>Experience</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-count="100">0</div>
+                    <span class="counter-plus">+</span>
+                    <p class="counter-text">Happy<br>Customers</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-count="4">0</div>
+                    <span class="counter-plus"></span>
+                    <p class="counter-text">States Across<br>India</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-count="3">0</div>
+                    <span class="counter-plus">+</span>
+                    <p class="counter-text">Ongoing Projects<br>in Pune</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-count="100">0</div>
+                    <span class="counter-plus">%</span>
+                    <p class="counter-text">Legal Clear<br>Titles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" style="position: relative; z-index: 2;">Values We <em>Live By</em></h2>
+            <div class="values-mobile-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="value-mobile-item">
+                    <div class="value-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Macro & Micro Planning</h3>
+                </div>
+                <div class="value-mobile-item">
+                    <div class="value-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Innovative & Durable Construction</h3>
+                </div>
+                <div class="value-mobile-item">
+                    <div class="value-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Best Value for Investment</h3>
+                </div>
+                <div class="value-mobile-item">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainable Living</h3>
+                </div>
+                <div class="value-mobile-item">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Honest & Transparent Dealings</h3>
+                </div>
+                <div class="value-mobile-item">
+                    <div class="value-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Always there for you</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta-section">
+        <div class="container">
+            <div class="about-cta-content" data-aos="fade-up">
+                <h2 class="section-title" style="position: relative; z-index: 2;">To Schedule a Site Visit</h2>
+                <form id="site-visit-form" class="site-visit-form" action="https://formspree.io/f/xpwpeqyg" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="plot_size" name="plot_size" required>
+                                <option value="" disabled selected>Plot size you are looking for</option>
+                                <option value="11000">11,000 sq.ft</option>
+                                <option value="22000">22,000 sq.ft</option>
+                                <option value="1acre">1 Acre</option>
+                                <option value="2acres">2 Acres</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <select id="purpose" name="purpose" required>
+                                <option value="" disabled selected>Purpose of Buying</option>
+                                <option value="primary">Primary Residence</option>
+                                <option value="secondary">Secondary Home</option>
+                                <option value="investment">Investment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="hidden" name="_subject" value="New Site Visit Request from Landwise Website">
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn-submit">Schedule Visit</button>
+                        </div>
+                    </div>
+                    <div id="form-success" class="success-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            // Mobile menu is now handled by mobile-menu.js
+
+            // Counter animation
+            const counters = document.querySelectorAll('.counter-number');
+            const speed = 200; // The lower the slower
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+
+                    // Lower inc to slow and higher to speed up
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        // Add inc to count and output in counter
+                        counter.innerText = Math.ceil(count + inc);
+                        // Call function every ms
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+
+            // Form submission with Formspree
+            const siteVisitForm = document.getElementById('site-visit-form');
+            const formSuccess = document.getElementById('form-success');
+
+            if (siteVisitForm) {
+                siteVisitForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // Show loading state
+                    const submitBtn = siteVisitForm.querySelector('.btn-submit');
+                    const originalBtnText = submitBtn.textContent;
+                    submitBtn.textContent = 'Sending...';
+                    submitBtn.disabled = true;
+
+                    // Submit the form to Formspree
+                    fetch(siteVisitForm.action, {
+                        method: siteVisitForm.method,
+                        body: new FormData(siteVisitForm),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            // Form submitted successfully, redirect to thank you page
+                            window.location.href = 'thank-you.html';
+                        } else {
+                            // Handle server errors
+                            response.json().then(data => {
+                                if (Object.hasOwnProperty.call(data, 'errors')) {
+                                    formSuccess.textContent = data.errors.map(error => error.message).join(', ');
+                                } else {
+                                    formSuccess.textContent = 'Oops! There was a problem submitting your form. Please try again.';
+                                }
+                                formSuccess.style.display = 'block';
+                                formSuccess.style.color = '#e74c3c';
+
+                                // Reset button
+                                submitBtn.textContent = originalBtnText;
+                                submitBtn.disabled = false;
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        // Network or other error
+                        formSuccess.textContent = 'Oops! There was a problem with your submission. Please try again later.';
+                        formSuccess.style.display = 'block';
+                        formSuccess.style.color = '#e74c3c';
+
+                        // Reset button
+                        submitBtn.textContent = originalBtnText;
+                        submitBtn.disabled = false;
+                    });
+                });
+            }
+        });
+    </script>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Landwise Logo_Website.png" alt="Landwise Solutions Logo">
+                </div>
+
+                <div class="footer-info">
+                    <div class="footer-address">
+                        <div class="address-column">
+                            <h4>Office Address</h4>
+                            <p>Office No 402, Sairaj Apartment,<br>Opposite HDFC Bank, S B Patil Public School Road,<br>Ravet Pune - 412101</p>
+                            <p class="contact-label">Contact No.</p>
+                            <p><a href="tel:+918421373649">+91 84213 73649</a></p>
+                        </div>
+
+                        <div class="address-column">
+                            <h4>Site Address</h4>
+                            <p>Office No 402, Sairaj Apartment,<br>Opposite HDFC Bank, S B Patil Public School Road,<br>Ravet Pune - 412101</p>
+                            <p class="contact-label">Contact No.</p>
+                            <p><a href="tel:+918421373649">+91 84213 73649</a></p>
+                            <p class="email-label">Email</p>
+                            <p><a href="mailto:landwise24@landwisesolutions.in">landwise24@landwisesolutions.in</a></p>
+                            <p><a href="mailto:landwisesolutions24@gmail.com">landwisesolutions24@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/918421373649" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Landwise Solutions. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <p>Disclaimer | <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </main> <!-- End of barba container -->
+
+    <!-- Smooth Scroll JS -->
+    <script src="js/smooth-scroll.min.js"></script>
+
+    <!-- Barba.js Transitions -->
+    <script src="js/transitions.js"></script>
+
+    <!-- Mobile Menu Handler -->
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>

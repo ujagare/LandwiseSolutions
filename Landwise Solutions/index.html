@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landwise Solutions - Premium Real Estate Properties and Plots">
+    <meta name="keywords" content="real estate, luxury homes, property, plots, land, investment, premium properties">
+    <link rel="canonical" href="https://landwisesolutions.com/" />
+    <title>Landwise Solutions</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Locomotive Scroll CSS temporarily disabled -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fix-mobile-menu.css">
+
+    <!-- Barba.js and GSAP for page transitions -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- Google Analytics - Uncomment and replace with your actual GA ID when ready -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+
+    <!-- Structured Data for Real Estate Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Landwise Solutions",
+      "image": "https://landwisesolutions.com/images/Landwise Logo_Website.png",
+      "url": "https://landwisesolutions.com",
+      "telephone": "+918421373649",
+      "email": "landwisesolutions24@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office No 402, Sairaj Apartment, Opposite HDFC Bank, S B Patil Public School Road, Ravet",
+        "addressLocality": "Pune",
+        "postalCode": "412101",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.6488",
+        "longitude": "73.7567"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/landwisesolutions",
+        "https://www.instagram.com/landwisesolutions",
+        "https://www.linkedin.com/company/landwisesolutions"
+      ],
+      "priceRange": "₹₹₹",
+      "description": "Landwise Solutions offers premium land plots in scenic locations across Maharashtra, with 14+ years of experience in real estate development."
+    }
+    </script>
+
+    <!-- Structured Data for Real Estate Listings -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Place",
+            "name": "Mulshi",
+            "description": "Mulshi's embrace: Immerse yourself in the verdant heart of Maharashtra, where nature reigns supreme.",
+            "image": "https://landwisesolutions.com/images/2193.jpg",
+            "url": "https://landwisesolutions.com/locations/mulshi.html",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Mulshi",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "18.5313",
+              "longitude": "73.5168"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Place",
+            "name": "Khed",
+            "description": "Khed: Untouched nature, pure serenity. Discover the tranquil heart of in Khed's lush landscapes.",
+            "image": "https://landwisesolutions.com/images/761085_2.jpg",
+            "url": "https://landwisesolutions.com/locations/khed.html",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Khed",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "18.8417",
+              "longitude": "73.8301"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Place",
+            "name": "Purandar",
+            "description": "A scenic region with historical significance, offering breathtaking views and a perfect blend of heritage and natural beauty.",
+            "image": "https://landwisesolutions.com/images/Purandar.jpg",
+            "url": "https://landwisesolutions.com/locations/purandar.html",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Purandar",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "18.2800",
+              "longitude": "73.9800"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Place",
+            "name": "Bhor & Velha",
+            "description": "These regions feature protected vegetation areas known as 'Deo-Rahat' or 'Deo-Rai', offering pristine natural landscapes and ecological diversity.",
+            "image": "https://landwisesolutions.com/images/nature.jpg",
+            "url": "https://landwisesolutions.com/locations/bhor-velha.html",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bhor & Velha",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "18.1500",
+              "longitude": "73.8500"
+            }
+          }
+        }
+      ]
+    }
+    </script>
+    <!-- Only remove transition overlays, keep CTA overlay -->
+    <script>
+        // Only remove transition overlays, keep CTA overlay
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create a style element
+            var style = document.createElement('style');
+            style.innerHTML = `
+                .transition-overlay,
+                .nature-elements,
+                .nature-element,
+                [class*="overlay"]:not(.mobile-menu-overlay.active):not(.cta-overlay) {
+                    display: none !important;
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    pointer-events: none !important;
+                    z-index: -9999 !important;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</head>
+<body data-barba="wrapper">
+    <!-- Page Transition Overlay - Completely Removed -->
+
+    <!-- Main Content Container -->
+    <main data-barba="container" data-barba-namespace="home" class="transition-fade">
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Landwise Logo_Website.png" alt="Landwise Solutions Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#locations">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-close">
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="mobile-nav-links">
+                <li style="--i:1"><a href="index.html" class="active">Home</a></li>
+                <li style="--i:2"><a href="about.html">About Us</a></li>
+                <li style="--i:3"><a href="index.html#locations">Location</a></li>
+                <li style="--i:4"><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mobile-menu-contact">
+                <h3>Contact Information</h3>
+                <div class="mobile-contact-items">
+                    <div class="mobile-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+918421373649">+91 84213 73649</a>
+                    </div>
+                    <div class="mobile-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:landwise24@landwisesolutions.in">landwise24@landwisesolutions.in</a>
+                    </div>
+                    <div class="mobile-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Office No 402, Sairaj Apartment, Opposite HDFC Bank, S B Patil Public School Road, Ravet Pune - 412101</p>
+                    </div>
+                </div>
+
+                <div class="mobile-social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/918421373649" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Hero Section with Video Swiper -->
+    <section id="hero" class="hero-section">
+        <div class="swiper-container hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-video-container">
+                        <video class="slide-video" autoplay muted loop playsinline>
+                            <source src="videos/video3.mp4" type="video/mp4">
+                        </video>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-caption">
+                            <h2 class="slide-subtitle">INVEST IN</h2>
+                            <h1 class="slide-title"><em>NATURE'S EMBRACE</em></h1>
+                            <p class="slide-description">Premium land plots in the serene landscapes of Maharashtra.</p>
+                            <a href="#locations" class="slide-button">Explore Locations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-video-container">
+                        <video class="slide-video" autoplay muted loop playsinline>
+                            <source src="videos/video2.mp4" type="video/mp4">
+                        </video>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-caption">
+                            <h2 class="slide-subtitle">EXPERIENCE</h2>
+                            <h1 class="slide-title"><em>SCENIC TRANQUILITY</em></h1>
+                            <p class="slide-description">Plots ranging from 11,000 sq ft to 2 acres in prime locations.</p>
+                            <a href="#amenities" class="slide-button">View Plot Sizes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-video-container">
+                        <video class="slide-video" autoplay muted loop playsinline>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                        </video>
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-caption">
+                            <h2 class="slide-subtitle">14 YEARS OF EXCELLENCE</h2>
+                            <h1 class="slide-title"><em>LANDWISE SOLUTIONS</em></h1>
+                            <p class="slide-description">Your trusted partner for premium land investments across Maharashtra.</p>
+                            <a href="#contact" class="slide-button">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">WELCOME TO LANDWISE</span>
+                <h2 class="section-title"><em>Unwind</em> Amidst Nature, <br>
+                     Peace and Joy!</h2>
+                <div class="title-separator">
+                    <span class="separator-line"></span>
+                    <span class="separator-icon"><i class="fas fa-tree"></i></span>
+                    <span class="separator-line"></span>
+                </div>
+            </div>
+
+            <div class="intro-content-wrapper">
+                <div class="intro-image" data-aos="fade-right">
+                    <div class="image-frame">
+                        <img src="images/khed/image1.webp" alt="Peaceful hillside retreat with lush greenery">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <span class="years-badge">14+ Years</span>
+                                <h3>Of Excellence</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-content" data-aos="fade-left">
+                    <div class="intro-text">
+                        <p class="intro-description">Unwind your weekends in a place where the honking of cars is replaced by the sweet songs of birds, where you find soothing greenery as far as the eye can see, and where every breath you take is filled with the freshness of nature.</p>
+
+                        <p class="intro-description">Welcome to Landwise Solutions, your very own weekend home, where every moment spent is <em>a celebration of life.</em></p>
+
+                        <p class="intro-description">Spanning across of lush greenery, our premium gated community of nature-inspired Hillside Luxury Plots is meticulously curated to offer you the best of all worlds – elevated lifestyle amenities, seamless conveniences and the beauty of Mother Earth.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Highlights Section -->
+    <section id="locations" class="investment-highlights-section">
+
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Where Every View Tells a Story  <br>
+                 <em>Discover Our Locations.
+</em></h2>
+            <div class="investment-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="investment-card" style="--i:0">
+                    <div class="investment-image">
+                        <img src="images/2193.jpg" alt="Mulshi Region">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Mulshi</h3>
+                        <p>Mulshi's embrace: Immerse yourself in the verdant heart of Maharashtra, where nature reigns supreme.</p>
+                        <div class="location-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Nive - Mulashi Taluka</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Nandivali - Mulashi Taluka</p>
+                        </div>
+                        <div class="investment-button">
+                            <a href="locations/mulshi.html" class="btn-location">Explore Mulshi <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investment-card" style="--i:1">
+                    <div class="investment-image">
+                        <img src="images/761085_2.jpg" alt="Khed Region">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Khed</h3>
+                        <p>Khed: Untouched nature, pure serenity. Discover the tranquil heart of in Khed's lush landscapes.</p>
+                        <div class="location-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Koliye village - Khed Taluka</p>
+                        </div>
+                        <div class="investment-button">
+                            <a href="locations/khed.html" class="btn-location">Explore Khed <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investment-card" style="--i:2">
+                    <div class="investment-image">
+                        <img src="images/Purandar.jpg" alt="Purandar Region">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Purandar</h3>
+                        <p>A scenic region with historical significance, offering breathtaking views and a perfect blend of heritage and natural beauty.</p>
+                        <div class="location-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Parinchay - Purandar Taluka</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Harni - Purandar Taluka</p>
+                        </div>
+                        <div class="investment-button">
+                            <a href="locations/purandar.html" class="btn-location">Explore Purandar <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investment-card" style="--i:3">
+                    <div class="investment-image">
+                        <img src="images/nature.jpg" alt="Bhor & Velha Region">
+                    </div>
+                    <div class="investment-content">
+                        <h3>Bhor & Velha</h3>
+                        <p>These regions feature protected vegetation areas known as "Deo-Rahat" or "Deo-Rai", offering pristine natural landscapes and ecological diversity.</p>
+                        <div class="location-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Bhor Taluka</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Velha Taluka</p>
+                        </div>
+                        <div class="investment-button">
+                            <a href="locations/bhor-velha.html" class="btn-location">Explore Bhor & Velha <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plot Sizes Section -->
+    <section id="amenities" class="plot-sizes-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">PREMIUM PLOTS</span>
+                <h2 class="section-title">Find Your Perfect <em>Plot Size</em></h2>
+                <div class="title-separator">
+                    <span class="separator-line"></span>
+                    <span class="separator-icon"><i class="fas fa-home"></i></span>
+                    <span class="separator-line"></span>
+                </div>
+                <p class="section-description">Choose from our range of carefully selected plot sizes to build your dream home in harmony with nature</p>
+            </div>
+
+            <div class="plot-sizes-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="plot-size-card">
+                    <div class="plot-size-header">
+                        <div class="plot-size-icon-wrapper">
+                            <div class="plot-size-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                        </div>
+                        <div class="size-badge">Quarter Acre</div>
+                    </div>
+                    <h3 class="plot-size-title">11,000 sq ft</h3>
+                    <p class="plot-size-subtitle">Perfect for a spacious family home</p>
+                    <div class="plot-size-details">
+                        <p><i class="fas fa-check-circle"></i> Approximately 1/4 acre</p>
+                        <p><i class="fas fa-check-circle"></i> Ideal for standard villa</p>
+                        <p><i class="fas fa-check-circle"></i> Ample garden space</p>
+                    </div>
+                    <div class="plot-size-footer">
+                        <a href="#contact" class="plot-size-link">Enquire Now</a>
+                    </div>
+                </div>
+
+                <div class="plot-size-card">
+                    <div class="plot-size-header">
+                        <div class="plot-size-icon-wrapper">
+                            <div class="plot-size-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                        </div>
+                        <div class="size-badge">Half Acre</div>
+                    </div>
+                    <h3 class="plot-size-title">22,000 sq ft</h3>
+                    <p class="plot-size-subtitle">Generous space for luxury living</p>
+                    <div class="plot-size-details">
+                        <p><i class="fas fa-check-circle"></i> Approximately 1/2 acre</p>
+                        <p><i class="fas fa-check-circle"></i> Room for garden and amenities</p>
+                        <p><i class="fas fa-check-circle"></i> Spacious outdoor areas</p>
+                    </div>
+                    <div class="plot-size-footer">
+                        <a href="#contact" class="plot-size-link">Enquire Now</a>
+                    </div>
+                </div>
+
+                <div class="plot-size-card">
+                    <div class="plot-size-header">
+                        <div class="plot-size-icon-wrapper">
+                            <div class="plot-size-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                        </div>
+                        <div class="size-badge">1 Acre</div>
+                    </div>
+                    <h3 class="plot-size-title">1 Acre</h3>
+                    <p class="plot-size-subtitle">Expansive property for estate living</p>
+                    <div class="plot-size-details">
+                        <p><i class="fas fa-check-circle"></i> 43,560 square feet</p>
+                        <p><i class="fas fa-check-circle"></i> Perfect for luxury estate</p>
+                        <p><i class="fas fa-check-circle"></i> Multiple building options</p>
+                    </div>
+                    <div class="plot-size-footer">
+                        <a href="#contact" class="plot-size-link">Enquire Now</a>
+                    </div>
+                </div>
+
+                <div class="plot-size-card">
+                    <div class="plot-size-header">
+                        <div class="plot-size-icon-wrapper">
+                            <div class="plot-size-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                        </div>
+                        <div class="size-badge">2 Acres</div>
+                    </div>
+                    <h3 class="plot-size-title">2 Acres</h3>
+                    <p class="plot-size-subtitle">Ultimate space for premium lifestyle</p>
+                    <div class="plot-size-details">
+                        <p><i class="fas fa-check-circle"></i> 87,120 square feet</p>
+                        <p><i class="fas fa-check-circle"></i> Ideal for grand estate with amenities</p>
+                        <p><i class="fas fa-check-circle"></i> Maximum privacy and exclusivity</p>
+                    </div>
+                    <div class="plot-size-footer">
+                        <a href="#contact" class="plot-size-link">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Amenities Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">PREMIUM AMENITIES</span>
+                <h2 class="section-title">Exceptional Features for <em>Unparalleled Living</em></h2>
+                <div class="title-separator">
+                    <span class="separator-line"></span>
+                    <span class="separator-icon"><i class="fas fa-leaf"></i></span>
+                    <span class="separator-line"></span>
+                </div>
+                <p class="section-description">Every Landwise Solutions property comes with premium amenities designed to enhance your lifestyle and investment value.</p>
+            </div>
+
+            <div class="features-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Essential</div>
+                    </div>
+                    <h3 class="feature-title">Electricity Connection</h3>
+                    <p class="feature-subtitle">Ready access to power</p>
+                    <div class="feature-details">
+                        <p><i class="fas fa-check-circle"></i> Ready-to-use infrastructure</p>
+                        <p><i class="fas fa-check-circle"></i> Proper connections to each plot</p>
+                        <p><i class="fas fa-check-circle"></i> Immediate availability</p>
+                    </div>
+                    <div class="feature-footer">
+                        <a href="#contact" class="feature-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-road"></i>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Connectivity</div>
+                    </div>
+                    <h3 class="feature-title">Road Access</h3>
+                    <p class="feature-subtitle">Smooth travel to your property</p>
+                    <div class="feature-details">
+                        <p><i class="fas fa-check-circle"></i> Well-maintained roads</p>
+                        <p><i class="fas fa-check-circle"></i> Proper drainage systems</p>
+                        <p><i class="fas fa-check-circle"></i> Year-round accessibility</p>
+                    </div>
+                    <div class="feature-footer">
+                        <a href="#contact" class="feature-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Utility</div>
+                    </div>
+                    <h3 class="feature-title">Water Supply</h3>
+                    <p class="feature-subtitle">Reliable water availability</p>
+                    <div class="feature-details">
+                        <p><i class="fas fa-check-circle"></i> Reliable infrastructure</p>
+                        <p><i class="fas fa-check-circle"></i> Connections to each plot</p>
+                        <p><i class="fas fa-check-circle"></i> Consistent availability</p>
+                    </div>
+                    <div class="feature-footer">
+                        <a href="#contact" class="feature-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                        </div>
+                        <div class="feature-badge">Support</div>
+                    </div>
+                    <h3 class="feature-title">Legal Documentation</h3>
+                    <p class="feature-subtitle">Hassle-free paperwork</p>
+                    <div class="feature-details">
+                        <p><i class="fas fa-check-circle"></i> Complete assistance</p>
+                        <p><i class="fas fa-check-circle"></i> All legal paperwork</p>
+                        <p><i class="fas fa-check-circle"></i> Smooth property purchase</p>
+                    </div>
+                    <div class="feature-footer">
+                        <a href="#contact" class="feature-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Delighted Customers</h2>
+            <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"Landwise Solutions exceeded all our expectations. The attention to detail, quality of infrastructure, and the natural beauty of the location make it a perfect investment."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Rahul Mishra</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"We were looking for a weekend home close to nature, and Landwise Solutions offered exactly what we wanted. The amenities and the peaceful environment are simply outstanding."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Disha Roy</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"The investment potential of these plots is remarkable. The location, infrastructure, and the developer's reputation all contribute to making this a wise choice for the future."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Sachin Kulkarni</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section with Nature Background -->
+    <section id="contact" class="cta-section">
+        <!-- Nature background image added -->
+        <div class="cta-bg-image"></div>
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">CONTACT US</span>
+                <h2 class="section-title">Connect With Nature</h2>
+            </div>
+
+            <div class="cta-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="cta-text">
+                    <div class="cta-text-inner">
+                        <h3>Ready to invest in your dream property?</h3>
+                        <p>Experience the perfect blend of nature and modern living with our premium plots in scenic locations.</p>
+
+                        <div class="cta-buttons">
+
+                            <a href="tel:+91 84213 73649" class="btn-secondary"><i class="fas fa-phone"></i> Call Us Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-form">
+                    <h3>Quick Enquiry</h3>
+                    <form id="enquiry-form" action="https://formspree.io/f/xpwpeqyg" method="POST">
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group half">
+                                <input type="tel" name="phone" placeholder="Your Phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="interest" required>
+                                <option value="" disabled selected>I'm interested in...</option>
+                                <option value="mulshi">Mulshi Region</option>
+                                <option value="khed">Khed Region</option>
+                                <option value="purandar">Purandar Region</option>
+                                <option value="bhor">Bhor & Velha Region</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="_subject" value="New Quick Enquiry from Landwise Website">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        <button type="submit" class="btn-submit">Send Enquiry <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Location Map</h2>
+            <div class="map-container" data-aos="fade-up" data-aos-delay="200" style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5831050224426!2d77.59792991482186!3d12.936487919118306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15b57c0b7c77%3A0x5c2b2b7f44444abb!2sLandwise%20Solutions!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Landwise Logo_Website.png" alt="Landwise Solutions Logo">
+                    <style>
+
+                    </style>
+                </div>
+
+                <div class="footer-info">
+                    <div class="footer-address">
+                        <div class="address-column">
+                            <h4>Office Address</h4>
+                            <p>Office No 402, Sairaj Apartment,<br>Opposite HDFC Bank, S B Patil Public School Road,<br>Ravet Pune - 412101</p>
+                            <p class="contact-label">Contact No.</p>
+                            <p><a href="tel:+911234567890">+91 84213 73649</a></p>
+                        </div>
+
+                        <div class="address-column">
+                            <h4>Site Address</h4>
+                            <p>Office No 402, Sairaj Apartment,<br>Opposite HDFC Bank, S B Patil Public School Road,<br>Ravet Pune - 412101</p>
+                            <p class="contact-label">Contact No.</p>
+                            <p><a href="tel:+919876543210">+91 84213 73649</a></p>
+                            <p class="email-label">Email</p>
+                            <p><a href="mailto:landwise24@landwisesolutions.in">landwise24@landwisesolutions.in</a></p>
+                            <p><a href="mailto:landwisesolutions24@gmail.com">landwisesolutions24@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/918421373649" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="footer-divider"></div> -->
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Landwise Solutions. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <p>Disclaimer | <a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(btn => btn.classList.remove('active'));
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+
+                    // Add active class to current button and pane
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Leaf animations on scroll
+            const investmentSection = document.querySelector('.investment-highlights-section');
+            const leafAnimationObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-leaves');
+
+                        // Add entrance animations for cards
+                        const cards = entry.target.querySelectorAll('.investment-card');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('animate-card');
+                            }, index * 200);
+                        });
+                    } else {
+                        entry.target.classList.remove('animate-leaves');
+
+                        // Remove card animations
+                        const cards = entry.target.querySelectorAll('.investment-card');
+                        cards.forEach(card => {
+                            card.classList.remove('animate-card');
+                        });
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            if (investmentSection) {
+                leafAnimationObserver.observe(investmentSection);
+            }
+        });
+    </script>
+
+    </main> <!-- End of barba container -->
+
+    <!-- Smooth Scroll JS -->
+    <script src="js/smooth-scroll.min.js"></script>
+
+    <!-- Barba.js Transitions -->
+    <script src="js/transitions.js"></script>
+
+    <!-- Mobile Menu Handler -->
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>
